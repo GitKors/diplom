@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+.header {
+    width: 1440px;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav__header {
+    width: 236px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__header a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.account-panel {
+    width: 251px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-panel a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    margin-left: -2px;
+    margin-top: -3px;
+}
+
+.account-panel img {
+    margin-left: 15px;
+}
+
+/* .login__butt {
+    width: 65px;
+    height: 26px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    background-color: #7CE3E1;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; 
+    position: relative;
+    top: -47px;
+    right: 41px;
+} */
+
+.login__button {
+    width: 65px;
+    height: 26px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    background-color: #7CE3E1;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; 
+    position: relative;
+    top: -47px;
+    right: 41px;
+}
+
+.account-panel.authorized {
+    width: 415px;
+    height: 93px;
+    flex-direction: row-reverse;
+  }
+
+.avatar {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+
+}
+
+.ava {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 25px;
+
+
+}
+
+.user_name {
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    right: 73px;
+    top: -5px;
+}
+
+.logout__button {
+    width: 31px;
+    height: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    padding-top: 0;
+    padding-left: 0;
+    color: rgba(0, 0, 0, 0.5);
+    background-color:white;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    right: 83px;
+
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    height: 63px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.account-info span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.loading-indicator {
+    position: absolute; 
+    top: 15%; 
+    left: 45%; 
+    transform: translate(-50%, -50%); 
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-top: 2px solid #7CE3E1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .burger-menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 376px) {
+    .header {
+        width: 350px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav__header {
+        display: none;
+    }
+
+    /* .account-panel {
+        display: none;
+    } */
+
+    /* .avatar {
+        display: none;
+    } */
+
+    .ava {
+        display: none;
+    }
+
+    .user_name {
+        display: none;
+    }
+
+    .logout__button {
+        width: 31px;
+        height: 12px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        padding-top: 0;
+        padding-left: 0;
+        color: rgba(0, 0, 0, 0.5);
+        background-color: white;
+        margin-top: 0px;
+        margin-bottom: 0;
+        position: relative;
+        right: 20px;
+        top: 90px;
+    }
+
+    .account-info {
+        width: 132px;
+        height: 75px;
+        margin-right: 20px;
+    }
+
+    .account-panel.authorized {
+            width: auto;
+            height: auto;
+            flex-direction: initial;
+    }
+    
+        .account-panel {
+            width: auto;
+            display: initial;
+            justify-content: initial;
+            align-items: initial;
+        }
+
+        .header .burger-menu-icon {
+            order: 3;
+            margin-right: 15px;
+        }
+        
+        .header .nav__header {
+            order: 2;
+        }
+        
+        .header .account-panel {
+            order: 1;
+        }
+
+        .main-logo {
+            width: 111px;
+            height: 111px;
+        }
+
+        .account-panel a {
+            display: none;
+        }
+
+        .account-panel-divider {
+            display: none;
+        }
+
+
+        .account-panel-text {
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-start; 
+            margin-left: 10PX;
+        }
+        
+        .account-panel-text span {
+            font-family: 'Inter, sans-serif';
+            font-weight: 700;
+            font-size: 14px;
+            color: 'rgba(0, 0, 0, 1)';
+        }
+
+        .account-info span {
+            font-family: 'Inter, sans-serif';
+            font-weight: 400;
+            font-size: 8px;
+        }
+
+
+        .account-panel-text:last-child {
+            margin-top: 0px;
+        }
+        
+        .account-panel-text span:last-child {
+            margin-top: 0px; 
+            margin-bottom: 5px; 
+        }
+        
+
+    .burger-menu-icon {
+        display: block; 
+        cursor: pointer;
+    }
+    
+    .burger-menu {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 375px;
+        background-color: rgba(2, 148, 145, 1);
+        border: 1px solid #ddd;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+    
+    .burger-menu-content {
+        padding: 10px;
+    }
+    
+    .burger-menu a {
+        display: block;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color:rgba(255, 255, 255, 1);
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .burger-menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 2;
+        top: -5px;
+    }
+
+    .burger-menu-icon-line {
+        width: 100%;
+        height: 3px;
+        background-color: rgba(2, 148, 145, 1);
+        margin: 5px 0;
+        border-radius: 3px;
+    }
+
+    .head_menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .close-button {
+        margin-left: 130px;
+    }
+
+    #no-link {
+        color:rgb(2, 205, 202);
+        margin-top: 70px;
+    } 
+
+    #log__butt-adaptiv {
+        width: 295px;
+        height: 52px;
+        background-color:rgba(124, 227, 225, 1);
+        color:#000000;
+        padding: 0;
+        margin-top: 20px;
+        margin-left: auto;
+    }
+
+
+
+
+    }
+
+

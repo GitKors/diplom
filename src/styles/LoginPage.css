@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .loginPage {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+  
+  .textAndImage {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textAndImage h1 {
+    font-family: 'Ferry', sans-serif; 
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    right: 60px;
+
+  }
+  
+  .pic_main {
+    width: 100%;
+    max-width: 321px;
+    margin-bottom: 20px;
+    position: relative;
+    right: 145px;
+  }
+  
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-top: 45px;
+    position: relative;
+    right: 20px;
+  }
+  
+  .loginContainer .tabs {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: -90px;
+    justify-content: space-between;
+    width: 330px;
+  }
+  
+  .loginContainer .tabs .tab {
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+    color:rgba(199, 199, 199, 1);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .loginContainer .tabs .tab.active {
+    font-weight: bold;
+    color: rgba(2, 148, 145, 1);
+  }
+  
+  .loginContainer .tabs .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 151px;
+    height: 2px;
+    background-color: rgba(2, 148, 145, 1);
+  }
+  
+  .loginContainer .tabs .tab:not(.active)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 213px;
+    height: 2px;
+    background-color: rgba(199, 199, 199, 1);
+  }
+  
+  .loginContainer label {
+    width: 379px;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    left: -10px;
+    position: relative;
+    color:rgba(148, 148, 148, 1);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .loginContainer input {
+    width: 379px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+  }
+  
+  .loginContainer .forgotPassword {
+    margin-bottom: 10px;
+    color: rgba(89, 112, 255, 1);
+    cursor: pointer;
+  }
+  
+  .loginContainer button {
+    width: 398px;
+    height: 59px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(89, 112, 255, 1);
+    color: white;
+    cursor: pointer;
+    margin-top: -10px;
+  }
+  
+  .loginContainer .socialLogin {
+    display: flex;
+    flex-direction: column;
+    /* width: 379px; */
+  }
+  
+  .loginContainer .socialLogin div {
+    margin-right: 10px;
+  }
+  
+  .loginContainer .socialLogin button {
+    width: 100px;
+    background-color: rgba(2, 148, 145, 1);
+  }
+  
+  .loginContainer .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .pic_lock {
+    position: relative;
+    top: -80px;
+    right: 229px;
+  }
+
+  .forgotPassword {
+    margin-top: 15px;
+  }
+
+  .container-soc {
+    display: flex;
+    width: 315px;
+    justify-content: space-between;
+  }
+
+  .socialLogin label {
+    position: relative;
+    left: -8px;
+  }
+
+
+  @media screen and (max-width: 376px) {
+
+    .loginPage {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .textAndImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textAndImage h1 {
+  font-family: 'Ferry', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  position: relative;
+  right: -10px;
+}
+
+.pic_main {
+  width: 374px;
+  max-width: 321px;
+  margin-bottom: 20px;
+  position: relative;
+  right: -35px;
+  top: 630px;
+}
+
+/* FORM */
+
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 335px;
+  margin-top: 45px;
+  position: relative;
+  right: -10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  top: -310px;
+}
+
+.loginContainer .tabs .tab {
+  margin: 0 30px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 10px;
+  color: rgba(199, 199, 199, 1);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.loginContainer .tabs .tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 2px;
+  background-color: rgba(2, 148, 145, 1);
+}
+
+.loginContainer .tabs .tab:not(.active)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 182px;
+  height: 2px;
+  background-color: rgba(199, 199, 199, 1);
+}
+
+.loginContainer label {
+  width: 379px;
+  margin-bottom: 15px;
+  margin-top: -5px;
+  left: 27px;
+  position: relative;
+  color: rgba(148, 148, 148, 1);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.loginContainer input {
+  width: 305px;
+  padding: 10px;
+  margin-bottom: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginContainer button {
+  width: 325px;
+  height: 59px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(89, 112, 255, 1);
+  color: white;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.loginContainer .socialLogin {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+}
+
+.pic_lock {
+  position: relative;
+  top: -80px;
+  right: 55px;
+  width: 75px;
+  height: 92px;
+}
+
+
+  }
